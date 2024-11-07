@@ -1,0 +1,12 @@
+{
+    "template": {
+        "tasks": {
+            "taskID": {
+                "name": "",
+                "time": "",
+                "isDone": false,
+                "description": ""
+            }
+        }
+    }
+}
