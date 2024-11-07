@@ -17,10 +17,10 @@ def hello_world():
     task = dict()
     
 
-    with open("./templates/tasks.json") as file:
+    with open("./json/tasks.json") as file:
         main = load(file)
     
-    with open("./templates/task.json") as file:
+    with open("./json/task.json") as file:
         task = load(file)
 
     #temp = main['template']
@@ -28,7 +28,7 @@ def hello_world():
 
     main["8456"]["tasks"].append(task)
 
-    with open("./templates/tasks.json", "w") as file:
+    with open("./json/tasks.json", "w") as file:
         dump(main, file, indent = 4)
     
     return str(1)
